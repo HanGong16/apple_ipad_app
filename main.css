@@ -3,3 +3,48 @@ body{
     line-height: 1;
 font-family: 'Roboto','Noto Sans KR', sans-serif;
 }
+/* common */
+:root{
+    --color-white:rgba(255, 255, 255, .8);
+    --bg-gray:#161617CC;
+    --color-white-hover:#FFFFFF;
+}
+li{
+ list-style: none;
+}
+a{
+    text-decoration: none;
+    color:var(--color-white)
+}
+
+/* Header */
+header{
+    background-color: var(--bg-gray);
+    
+}
+header .inner{
+    max-width: 1020px;
+    margin:0 auto;
+}
+header  ul.menu{
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+   
+}
+
+header ul.menu li{
+    display: flex;
+}
+
+header ul.menu li a{
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    font-size :12px;
+    transition: color .5s;
+}
+
+header ul.menu li a:hover{
+    color:var(--color-white-hover);
+}
