@@ -33,20 +33,20 @@ header  ul.menu{
    
 }
 
-header ul.menu li{
+header ul.menu > li{
     display: flex;
 }
 
-header ul.menu li a{
+header ul.menu > li > a{
     display: flex;
     align-items: center;
     padding:0 10px;
     font-size :12px;
     transition: color .5s;
 }
-header ul.menu li.apple-logo a,
-header ul.menu li.search-starter a,
-header ul.menu li.basket-starter a{
+header ul.menu > li.apple-logo > a,
+header ul.menu > li.search-starter > a,
+header ul.menu > li.basket-starter > a{
     width: 13px;
     background-repeat:no-repeat;
     /* text-indent: -9999px; */
@@ -55,15 +55,15 @@ header ul.menu li.basket-starter a{
     white-space: nowrap;
     background-position: center 13px;
 }
-header ul.menu li.apple-logo a{
+header ul.menu > li.apple-logo > a{
     background-image: url('./images/header_apple.svg');
 }
-header ul.menu li.search-starter a{
+header ul.menu > li.search-starter > a{
     background-image:url('./images/header_search.svg');
 }
-header ul.menu li.basket-starter a{
+header ul.menu > li.basket-starter > a{
     background-image:url('./images/header_bag.svg')
 }
-header ul.menu li a:hover{
+header ul.menu > li > a:hover{
     color:var(--color-white-hover);
 }
