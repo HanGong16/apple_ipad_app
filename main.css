@@ -44,6 +44,7 @@ header  ul.menu{
 header ul.menu > li{
     display: flex;
     position: relative;
+    transition: .4;
 }
 
 header ul.menu > li > a{
@@ -151,7 +152,9 @@ header .search-wrap{
     top:0;
     left:0;
     width: 100%;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
 }
 .search-wrap .search{
     max-width: 680px;
@@ -232,11 +235,31 @@ header .search .autocompletes ul li a:hover{
     background-color:#F5F5F5;
     color:#0071E3;
 }
+
+header .search input,
+header .search .search-icon,
+header .search .autocompletes h3,
+header .search .autocompletes li{
+    transition: .6s;
+    transform: translate(100px,0);
+}
 header.searching ul.menu > li{
-    display: none;
+    transform: scale(.7);
+    opacity: 0;
+    
 }
 
 header.searching .search-wrap{
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .2s;
 }
 
+
+.searching .search input,
+header.searching .search .search-icon,
+header.searching .search .autocompletes h3,
+header.searching .search .autocompletes li{
+    transition-delay:.2s ;
+    transform: translate(0,0);
+}
