@@ -169,7 +169,7 @@ header .search .shadow{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
-header .search .textfiled{
+header .search .textfield{
     position: relative;
 }
 header .search  input{
