@@ -80,10 +80,15 @@ header .basket{
     position: absolute;
     top:calc(100% + 4px);
     right: -6px;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
 }
 header .basket.open{
   display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 header .basket .arrow{
