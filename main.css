@@ -1,5 +1,10 @@
-
+html.fixed{
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
 body{
+    height: 10000px;
     font-size: 16px;
     line-height: 1;
 font-family: 'Roboto','Noto Sans KR', sans-serif;
