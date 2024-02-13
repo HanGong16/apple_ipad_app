@@ -30,6 +30,7 @@ const searchWrapEl = headerEl.querySelector('.search-wrap');
 const searchCloserEl = searchWrapEl.querySelector(' .search-closer');
 const searchShadowEl = searchWrapEl.querySelector('.shadow');
 const searchDelayEls = [...searchWrapEl.querySelectorAll('li')];
+const inputEl = document.querySelector('.textfield input');
 
 searchStarterEl.addEventListener('click', showSearch);
 searchCloserEl.addEventListener('click', hideSearch);
@@ -48,7 +49,11 @@ function showSearch() {
     (el, idx) =>
       (el.style.transitionDelay = (idx * 0.4) / searchDelayEls.length + 's')
   );
+  setTimeout(function () {
+    inputEl.focus();
+  }, 600); // input의 transition이 .6s이기때문에 transition끝나고 실행되야하기 때문
 }
+
 function hideSearch() {
   headerEl.classList.remove('searching');
   document.documentElement.classList.remove('fixed');
@@ -65,4 +70,5 @@ function hideSearch() {
         (el.style.transitionDelay = (idx * 0.4) / searchDelayEls.length + 's')
     );
   searchDelayEls.reverse();
+  inputEl.value = '';
 }
