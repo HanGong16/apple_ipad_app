@@ -23,6 +23,27 @@ a{
     text-decoration: none;
     color:var(--color-white)
 }
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 24px;
+    padding:0 10px;
+    border:none;
+    border-radius:100px;
+    outline: none;
+    font-size:11px;
+    line-height:1;
+    color:#FFF;
+    background-color: #0071E3;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: .7;
+}
+.btn:focus{
+    box-shadow: 0 0 0 4px #81B9F1;
+}
 
 /* Header */
 header{
@@ -262,4 +283,52 @@ header.searching .search .autocompletes h3,
 header.searching .search .autocompletes li{
     transition-delay:.2s ;
     transform: translate(0,0);
+}
+
+/*Navigation*/
+nav{
+    background-color:rgba(255, 255, 255, .7);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid #D2D2D2;
+    position:sticky;
+    top:0;
+    z-index: 10;
+}
+
+nav .inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 52px;
+    display: flex;
+    align-items:center;
+}
+nav h1{
+    font-size:22px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+nav .menu{
+    display: flex;
+    gap:12px;
+    margin-right: 18px;
+}
+
+
+nav .menu li a{
+    display: block;
+    color:#1D1D1D;
+    padding:6px;
+    font-size: 11px;
+}
+nav .menu li:hover a{
+    color:#0071E3;
+}
+nav .menu li.active a{
+    opacity: .5;
+    cursor:default;
+
+}
+nav .menu li.active:hover a{
+    color:#1D1D1D;
 }
