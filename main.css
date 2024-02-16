@@ -96,9 +96,14 @@ a.link:hover{
 a.link::after{
     content:" >";
 }
+/*feature*/
+.feature{
+    display: flex;
+}
 /*Figures */
 .figures{
     position: relative;
+    flex-grow: 1;
 }
 .figures figcaption{
     position: absolute;
@@ -109,6 +114,32 @@ a.link::after{
     position: absolute;
     top:0;
     left:0;
+}
+/*infos*/
+.infos{
+    display: flex;
+    flex-direction: column;
+}
+.infos.infos--center{
+    justify-content: center;
+}
+.infos.infos--end{
+    justify-content: flex-end;
+}
+.info{
+    max-width: 330px;
+    margin-bottom: 24px;
+}
+.info .icon{
+    width: 100px;
+    height: 100px;
+    margin: 0 0 -15px -30px;
+    background-image:url('./images/sprite_apps.png');
+}
+.info p{
+    font-size: 21.5px;
+    font-weight: 600;
+    line-height: 1.5;
 }
 /* Header */
 header{
@@ -464,3 +495,44 @@ nav .menu li.active:hover a{
 .hero .links{
     margin-top: 30px;
 }
+
+/*power*/
+
+.power{
+    margin-top: 110px;
+}
+
+.power .multiple-apps h1{
+    background-image:url('./images/power_headline.png');
+    width: 500px;
+    height: 280px;
+    transform: translate(104px,0);
+}
+.power .multiple-apps .figures{
+    height: 773px;
+}
+.power .multiple-apps figcaption{
+    width: 138px;
+    height: 46px;
+    background-image:url('./images/power_multiple_apps_caption.png');
+    transform: translate(703px,-47px);
+}
+
+/*power / arcade*/
+
+.power .arcade{
+    margin-top: 55px;
+}
+.power .arcade .figures{
+    height: 600px;
+}
+.power .arcade figure{
+    transform: translate(-347px,-90px);
+}
+.power .arcade figcaption{
+    background-image:url(./images/power_arcade_caption.png);
+    width: 150px;
+    height: 77px;
+    transform: translate(483px,653px);
+}
+
