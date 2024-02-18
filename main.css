@@ -43,6 +43,11 @@ img{
 p{
     line-height: 1.6;
 }
+sup {
+    margin-right: 6px;
+    font-size: .7em;
+    vertical-align: top;
+  }
 .inner{
     max-width: 980px;
     margin: 0 auto;
