@@ -1194,3 +1194,37 @@ nav .menu li.active:hover a{
 .compare .item a.link{
     font-size: 14px;
 }
+
+footer{
+   
+    background-color:var(--color-section);
+    
+}
+
+footer .buy-info{
+    padding:76px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap:20px;
+}
+footer .buy-info div{
+    text-align: center;
+}
+footer .buy-info .icon {
+    width:56px;
+    height: 56px;
+    margin: 0 auto 10px;
+}
+footer .buy-info h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+footer .buy-info p{
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+footer .buy-info a.link{
+    font-size: 14px;
+}
