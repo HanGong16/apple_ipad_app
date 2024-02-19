@@ -156,3 +156,9 @@ navigations.forEach((navigation) => {
 
   navigationsEl.append(navigationEl);
 });
+
+/* Footer legal */
+const copyrightEl = document.querySelector('.copyright');
+const yearEl = copyrightEl.querySelector('.this-year');
+
+yearEl.textContent = new Date().getFullYear();
