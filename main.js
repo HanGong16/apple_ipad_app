@@ -1,4 +1,5 @@
 import ipads from './data/ipads.js';
+import navigations from './data/navigations.js';
 //bascket
 const basketEmotion = document.querySelector('.basket-starter');
 const basketBox = document.querySelector('.basket');
@@ -131,4 +132,27 @@ ipads.forEach((ipad) => {
   `;
 
   itemsEl.append(itemEl);
+});
+
+/*Navigations*/
+const navigationsEl = document.querySelector('footer .navigations');
+
+navigations.forEach((navigation) => {
+  const navigationEl = document.createElement('div');
+  navigationEl.classList.add('nav');
+
+  let mapList = '';
+  navigation.maps.forEach((map) => {
+    mapList += /*HTML*/ `<li><a href="${map.url}">${map.name}</a></li>`;
+  });
+  navigationEl.innerHTML = /*HTML*/ `
+  <h3>
+    <span class='text'>${navigation.title}</span>
+  </h3>
+  <ul>
+    ${mapList}
+</ul>
+  `;
+
+  navigationsEl.append(navigationEl);
 });
