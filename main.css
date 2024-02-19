@@ -259,6 +259,7 @@ a.link::after{
     font-size:20px;
 }
 
+
 /* Header */
 header{
     --header-hight:44px;
@@ -1030,4 +1031,24 @@ nav .menu li.active:hover a{
     height:31px;
     background-image:url('./images/privacy_caption_touch_id.png');
     transform: translate(533px,485px);
+}
+
+/*Accessibility */
+.accessibility{
+    margin-top: 266px;
+    margin-bottom: 170px;
+}
+.accessibility h1{
+    width: 364px;
+    height: 270px;
+    background-image:url('./images/accessibility_headline.png');
+}
+.accessibility .infos{
+    margin-top: 20px;
+}
+.accessibility .figures{
+    height: 100px;
+}
+.accessibility figure{
+    transform: translate(470px, -620px);
 }
