@@ -267,7 +267,7 @@ a.link::after{
     box-sizing:border-box;
     background-color:var(--color-white);
 }
-.whitebox .whitebox--transparent{
+.whitebox.whitebox--transparent{
     background-color:transparent;
 }
 .whitebox .icon{
@@ -1097,3 +1097,21 @@ nav .menu li.active:hover a{
     margin-top:60px;
     margin-right:90px;
 }
+
+/*Environment*/
+.environment{
+    padding:20px 20px 0;
+    background-color:var(--color-section);
+    text-align: center;
+}
+
+.environment .icon{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.environment  h1{
+    color: #03A10E;
+}
+
+
