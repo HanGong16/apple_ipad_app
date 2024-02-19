@@ -1286,3 +1286,34 @@ footer .breadcrumbs a.apple-logo{
 footer .breadcrumbs a:hover{
     text-decoration: underline;
 }
+
+/*Footer / Navigations */
+
+footer .navigations{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 344px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+footer .navigations .nav{
+    margin-top: 24px;
+}
+footer .navigations .nav:nth-child(6){
+    padding-bottom:100px
+}
+footer .navigations .nav h3{
+    font-size:12px;
+    font-weight:600;
+}
+footer .navigations .nav li{
+    margin-top:12px;
+    font-size: 12px;
+}
+footer .navigations .nav li a{
+    color:var(--color-font-darkgray);
+}
+footer .navigations .nav li a:hover{
+    text-decoration: underline;
+}
