@@ -1115,3 +1115,19 @@ nav .menu li.active:hover a{
 }
 
 
+/* Accessory-shop*/
+.accessory-shop{
+    text-align: center;
+    background-color:var(--color-section);
+}
+.accessory-shop{
+    padding-bottom:0;
+}
+.accessory-shop .inner{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.accessory-shop img{
+    margin-top: 50px;
+}
