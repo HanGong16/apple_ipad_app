@@ -1317,3 +1317,43 @@ footer .navigations .nav li a{
 footer .navigations .nav li a:hover{
     text-decoration: underline;
 }
+
+/*Footer how-to-shop*/
+footer .how-to-sho{
+    font-size:12px;
+    line-height:1.4;
+    color:var(--color-font-darkgray);
+}
+footer .how-to-shop a{
+    color:var(--color-link);
+}
+footer .how-to-shop a:hover{
+    text-decoration:underline;
+}
+footer .legal{
+    margin-top: 10px;
+    padding:10px 0 40px;
+    border-top:1px solid var(--color-border);
+    display: flex;
+    gap:50px;
+    font-size:12px;
+    color:var(--color-font-darkgray);
+}
+footer .legal ul{
+    flex-grow: 1;
+    display:flex;
+    gap:21px;
+}
+footer .legal ul li{
+    position: relative;
+}
+footer .legal ul li::after{
+    content:'|';
+    position:absolute;
+    right:-11px;
+    color:var(--color-border);
+}
+footer .legal ul li:last-child::after{
+    display: none;
+}
+
