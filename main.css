@@ -259,7 +259,7 @@ a.link::after{
     font-size:20px;
 }
 /*WhiteBox */
-.WhiteBox{
+.whitebox{
     max-width: 1386px ;
     margin:0 auto;
     padding: 100px 30px;
@@ -1080,3 +1080,4 @@ nav .menu li.active:hover a{
 .accessibility figure{
     transform: translate(470px, -620px);
 }
+
