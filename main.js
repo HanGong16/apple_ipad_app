@@ -35,7 +35,10 @@ const searchDelayEls = [...searchWrapEl.querySelectorAll('li')];
 const inputEl = document.querySelector('.textfield input');
 
 searchStarterEl.addEventListener('click', showSearch);
-searchCloserEl.addEventListener('click', hideSearch);
+searchCloserEl.addEventListener('click', (e) => {
+  e.stopPropagation();
+  hideSearch();
+});
 searchShadowEl.addEventListener('click', hideSearch);
 
 function showSearch() {
@@ -74,6 +77,7 @@ function hideSearch() {
   searchDelayEls.reverse();
   inputEl.value = '';
 }
+
 function playScroll() {
   document.documentElement.classList.remove('fixed');
 }
@@ -86,10 +90,31 @@ const menuStarterEl = document.querySelector('header .menu-starter');
 menuStarterEl.addEventListener('click', () => {
   if (headerEl.classList.contains('menuing')) {
     headerEl.classList.remove('menuing');
+    inputEl.value = '';
     playScroll();
   } else {
     headerEl.classList.add('menuing');
     stopScroll();
+  }
+});
+
+//헤더 검색
+const searchTextFieldEl = document.querySelector('header .textfield');
+const searchCancleEl = document.querySelector('header .search-canceler');
+searchTextFieldEl.addEventListener('click', () => {
+  headerEl.classList.add('searching--mobile');
+  inputEl.focus();
+});
+searchCancleEl.addEventListener('click', () => {
+  headerEl.classList.remove('searching--mobile');
+});
+
+//window resize - 예외처리
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 740) {
+    headerEl.classList.remove('searching');
+  } else {
+    headerEl.classList.remove('searching--mobile');
   }
 });
 
