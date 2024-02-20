@@ -40,7 +40,7 @@ searchShadowEl.addEventListener('click', hideSearch);
 
 function showSearch() {
   headerEl.classList.add('searching');
-  document.documentElement.classList.add('fixed');
+  stopScroll();
   headerMenuEls
     .reverse()
     .forEach(
@@ -58,7 +58,7 @@ function showSearch() {
 
 function hideSearch() {
   headerEl.classList.remove('searching');
-  document.documentElement.classList.remove('fixed');
+  playScroll();
   headerMenuEls
     .reverse()
     .forEach(
@@ -74,6 +74,24 @@ function hideSearch() {
   searchDelayEls.reverse();
   inputEl.value = '';
 }
+function playScroll() {
+  document.documentElement.classList.remove('fixed');
+}
+function stopScroll() {
+  document.documentElement.classList.add('fixed');
+}
+
+//header menu toggle */
+const menuStarterEl = document.querySelector('header .menu-starter');
+menuStarterEl.addEventListener('click', () => {
+  if (headerEl.classList.contains('menuing')) {
+    headerEl.classList.remove('menuing');
+    playScroll();
+  } else {
+    headerEl.classList.add('menuing');
+    stopScroll();
+  }
+});
 
 /*IntersectionObserver */
 const io = new IntersectionObserver((entries) => {
