@@ -118,6 +118,30 @@ window.addEventListener('resize', () => {
   }
 });
 
+const navEl = document.querySelector('nav');
+const navMenuToggleEl = navEl.querySelector('.menu-toggler');
+const navMenuShadowEl = navEl.querySelector('.shadow');
+
+navMenuToggleEl.addEventListener('click', () => {
+  if (navEl.classList.contains('menuing')) {
+    hideNavMenu();
+  } else {
+    showNavMenu();
+  }
+});
+navEl.addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+navMenuShadowEl.addEventListener('click', hideNavMenu);
+window.addEventListener('click', hideNavMenu);
+
+function showNavMenu() {
+  navEl.classList.add('menuing');
+}
+function hideNavMenu() {
+  navEl.classList.remove('menuing');
+}
+
 /*IntersectionObserver */
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
