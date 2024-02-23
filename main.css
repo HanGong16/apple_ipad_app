@@ -2279,6 +2279,11 @@ nav .menu li.active:hover a{
 .environment  h1{
     color: #03A10E;
 }
+@media (max-width:1000px){
+    .environment p br{
+        display: none;
+    }
+}
 
 
 /* Accessory-shop*/
@@ -2298,12 +2303,15 @@ nav .menu li.active:hover a{
     margin-top: 50px;
 }
 
+
 /*Trade*/
 .trade{
     background-color:var(--color-section);
     padding:20px 20px 0;
     text-align:center;
 }
+
+
 
 /*Compare */
 .compare{
@@ -2360,6 +2368,7 @@ nav .menu li.active:hover a{
 .compare .item a.link{
     font-size: 14px;
 }
+
 
 footer{
    
