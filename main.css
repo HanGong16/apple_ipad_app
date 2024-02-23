@@ -56,7 +56,9 @@ sup {
     position: relative;
 }
 @media (max-width:1000px){
+   .inner{
     max-width: 692px;
+   }
 }
 .btn{
     display: flex;
@@ -295,7 +297,7 @@ a.link::after{
 .info a.link{
     margin-top: 44px;
     display: block;
-    font-size:20px;
+    font-size:19.5px;
 }
 
 @media (max-width:1000px){
@@ -1172,10 +1174,10 @@ nav .menu li.active:hover a{
         height: 480px;
     }
     .power .arcade  figure{
-        transform: translate(-182px,-60px);
+        transform: translate(-182px,-6px);
     }
     .power .arcade figure img{
-        width: 820px;
+        width: 676px;
     }
     .power .arcade figcaption{
         transform: scale(.8) translate(316px,528px);
@@ -1312,7 +1314,7 @@ nav .menu li.active:hover a{
         height:330px;
     }
     .display .shareplay figure{
-        transform: translate(-128px,0);
+        transform: translate(-178px,0);
     }
     .display .shareplay figure img{
         width: 682px;
@@ -1778,6 +1780,8 @@ nav .menu li.active:hover a{
     background-image:url('./images/ipados_quick_note_caption.png');
     transform: translate(511px,470px)
 }
+
+
 
 /*Apps */
 .apps{
