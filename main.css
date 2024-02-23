@@ -2316,6 +2316,12 @@ nav .menu li.active:hover a{
     padding:20px 20px 0;
     text-align:center;
 }
+@media(max-width:1000px){
+    .trade p br{
+        display: none;
+    }
+}
+
 
 
 
