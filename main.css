@@ -2302,6 +2302,12 @@ nav .menu li.active:hover a{
 .accessory-shop img{
     margin-top: 50px;
 }
+@media (max-width:1000px){
+    .accessory-shop img{
+        width: 960px;
+    }
+
+}
 
 
 /*Trade*/
