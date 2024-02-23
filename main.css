@@ -2380,6 +2380,32 @@ nav .menu li.active:hover a{
 .compare .item a.link{
     font-size: 14px;
 }
+@media(max-width:1000px){
+    .compare .items{
+        max-width: 500px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:68px auto 34px;
+    }
+}
+@media (max-width:740px){
+    .compare .whitebox{
+        max-width: 430px;
+    }
+    .compare .items{
+        max-width: 190px;
+    }
+    .compare .item{
+        border-bottom:none;
+    }
+    .compare .links{
+        padding-top: 40px;
+        border-top:1px solid var(--color-border)
+    }
+    .compare a.link{
+        margin-top: 0;
+    }
+}
 
 
 footer{
