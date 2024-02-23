@@ -2022,6 +2022,7 @@ nav .menu li.active:hover a{
     .apps .figures > div{
         display: flex;
         justify-content: center;
+        height: 240px;
     }
     .apps .figure-masterclass figure{
         transform: translate(140px,40px);
@@ -2173,7 +2174,43 @@ nav .menu li.active:hover a{
 .accessibility figure{
     transform: translate(470px, -620px);
 }
-
+@media (max-width:1000px){
+    .accessibility{
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .accessibility h1{
+        width: 287px;
+        height: 205px;
+    }
+    .accessibility .info{
+        max-width: 346px;
+    }
+    .accessibility figure{
+        transform: translate(410px,-504px);
+    }
+    .accessibility figure img{
+        width: 329px;
+    }
+}
+@media (max-width:740px){
+    .accessibility{
+        margin-bottom: 344px;
+    }
+    .accessibility h1{
+        height: 165px;
+        margin: 0 auto;
+    }
+    .accessibility .info{
+        max-width: none;
+    }
+    .accessibility .figures{
+        margin-top: 30px;
+    }
+    .accessibility figure{
+        transform: translate(20px,0);
+    }
+}
 
 /*AR*/
 .ar{
