@@ -215,6 +215,7 @@ navigations.forEach((navigation) => {
   navigationEl.innerHTML = /*HTML*/ `
   <h3>
     <span class='text'>${navigation.title}</span>
+    <span class='icon'>+</span>
   </h3>
   <ul>
     ${mapList}
@@ -229,3 +230,14 @@ const copyrightEl = document.querySelector('.copyright');
 const yearEl = copyrightEl.querySelector('.this-year');
 
 yearEl.textContent = new Date().getFullYear();
+
+// Footer Accodian menu
+const mapEls = document.querySelectorAll('footer .nav');
+
+mapEls.forEach((mapEl) => {
+  const h3El = mapEl.querySelector('h3');
+  console.log(h3El);
+  h3El.addEventListener('click', () => {
+    mapEl.classList.toggle('active');
+  });
+});
